@@ -1,0 +1,23 @@
+#root{
+  width:100%;
+  min-height:100vh;
+}
+
+body{
+  margin:0;
+  background:#f4f7fb;
+  overflow-x:hidden;
+}
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#2563eb;
+  border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+  background:#e5e7eb;
+}
