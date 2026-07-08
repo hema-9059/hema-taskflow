@@ -1,75 +1,121 @@
-# React + TypeScript + Vite
+# TeamFlow – Smart Team Management Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+TeamFlow is a full-stack web application designed to simplify team collaboration, project management, and task tracking. It enables users to organize projects, manage teams, assign tasks, and monitor progress through a modern, responsive dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application is built using modern web technologies with a focus on scalability, performance, and user experience.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Secure User Authentication (Register & Login)
+- Interactive Dashboard
+- Project Management
+- Team Management
+- Task Management
+- Responsive User Interface
+- Real-Time Project Statistics
+- Cloud Deployment using Vercel
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Frontend
+- React.js
+- TypeScript
+- Vite
+- Tailwind CSS
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Backend
+- Node.js
+- Express.js
+- TypeScript
 
-```
+### Database
+- PostgreSQL
+- Prisma ORM
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Deployment
+- Vercel
+- GitHub
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project Structure
 
 ```
+Frontend
+│
+├── Authentication
+├── Dashboard
+├── Projects
+├── Teams
+├── Tasks
+└── Profile
+
+Backend
+│
+├── Controllers
+├── Routes
+├── Middleware
+├── Prisma
+└── Database
+```
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/hema-9059/hema-taskflow.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the application
+
+```bash
+npm run dev
+```
+
+---
+
+## Live Demo
+
+**Application**
+
+https://hema-taskflow.vercel.app
+
+---
+
+## Future Enhancements
+
+- Team Collaboration
+- Email Notifications
+- File Attachments
+- Activity Logs
+- Role-Based Access Control
+- Advanced Analytics
+
+---
+
+## Author
+
+**Raavi Hema**
+
+Bachelor of Technology (Computer Science & Engineering)
+
+---
+
+## License
+
+This project is developed for educational and learning purposes.
